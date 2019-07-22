@@ -5,3 +5,5 @@ double pop(void);
 int getop(char []);
 int getch(void);
 void ungetch(int);
+
+void print_stack(void);

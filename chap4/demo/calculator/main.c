@@ -18,9 +18,12 @@ int main()
 	char s[MAXOP];
 
 	while ((type = getop(s)) != EOF) {
+		//printf("begin main while:\n");
+		//print_stack();
 		switch (type) {
 			case NUMBER:
-				push(atof(s));
+				//printf("The value is %f\n", atof(s));
+				push(atof(s));			
 				break;
 			case '+':
 				push(pop() + pop());
@@ -39,6 +42,14 @@ int main()
 				else
 					printf("error: zero divisor\n");
 				break;
+			case '%':
+				op2 = pop();
+				if (op2 != 0.0){
+					int temp = (int)pop() % (int)op2;
+					push((double) temp);
+				}
+				else
+					printf("error: zero remainder\n");
 			case '\n':
 				printf("\t%.8g\n", pop());
 				break;
@@ -46,6 +57,7 @@ int main()
 				printf("error: unknown command %s\n", s);
 				break;
 		}
+		//printf("end main while\n");
 	}
 	return 0;
 }

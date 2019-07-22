@@ -5,6 +5,13 @@
 int sp = 0;
 double val[MAXVAL];
 
+void print_stack(void){
+	printf("print stack:\n");
+	for(int i = 0; i < sp; i++)
+		printf("The %d is %f\n", i, val[i]);
+	printf("END\n");
+}
+
 void push(double f) {
 	if (sp < MAXVAL)
 		val[sp++] = f;

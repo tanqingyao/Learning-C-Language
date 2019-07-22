@@ -14,10 +14,10 @@ int getop(char s[])
 	i = 0;
 	if (isdigit(c))
 		while (isdigit(s[++i] = c = getch()))
-			debug(c);
+			;
 	if(c == '.')
 		while (isdigit(s[++i] = c = getch()))
-			debug(c);
+			;
 	s[i] = '\0';
 	if (c != EOF)
 		ungetch(c);
