@@ -1,16 +1,16 @@
-#C程序设计语言
+# C程序设计语言
 
 练习代码目录
 ---
-##Chapter 1
+## Chapter 1
 
-###demo
+### demo
 书上[demo程序](./chap1/homework)
 
 - 复制输入
 - [数组计数](./chap1/demo/count_array.c)
 
-###练习
+### 练习
 - [练习1-6](./chap1/homework/exer_1_6.c) （验证EOF）
 - [练习1-7](./chap1/homework/exer_1_7.c) （打印EOF）
 - [练习1-8](./chap1/homework/exer_1_8.c)（统计字符个数）
@@ -20,18 +20,18 @@
 - [练习1-13](./chap1/homework/exer_1_13.c) （打印输入中单词长度直方图）
 - [练习1-14](./chap1/homework/exer_1_14.c) （打印输入中字符频率直方图）
 
-##Chapter 2
+## Chapter 2
 
 **未完成**
 
-##Chapter 3
+## Chapter 3
 
-###demo
+### demo
 
 - [折半查找](./chap3/demo/binsearch.c)
 - [trim函数](./chap3/demo/trim.c)
 
-###练习
+### 练习
 
 - [练习3-1](./chap3/homework/exer_3_1.c) （折半查找内部只循环一次，比较运行时间）
 - [练习3-2](./chap3/homework/exer_3_2.c) （escape（s，t）函数，将t复制到s中，不可见字符转化成转义字符）
@@ -39,21 +39,21 @@
 - [练习3-5](./chap3/homework/exer_3_5.c) （itob(n,s,b),将n格式化为b进制保存在s中）
 - [练习3-6](./chap3/homework/exer_3_6.c) （itoa函数添加打三个参数）
 
-##Chapter 4
+## Chapter 4
 
-###demo
+### demo
 
 - [字符串匹配](./chap4/demo/pattern.c)
 - [atof函数](./chap4/demo/atof_double.c)
 - [逆波兰计算器](./chap4/demo/calculator)
 
-###练习
+### 练习
 
 - [练习4-3到4-8](./chap4/homwwork/exer_4_3to8) （代码里备注）
 
-##Chapter 5
+## Chapter 5
 
-###demo
+### demo
 
 - [getint函数](./chap5/demo/getnumber)
 - [文本排序](./chap5/demo/sort)
