@@ -1,7 +1,7 @@
 # C程序设计语言
 
 练习代码目录
----
+
 ## Chapter 1
 
 ### demo
@@ -59,6 +59,6 @@
 - [文本排序](./chap5/demo/sort)
 - [命令行模式匹配](./chap5/demo/pattern)
 
-###练习
+### 练习
 
 - [练习5-10](./chap5/homework/exer_5_10) （命令行计算逆波兰表达式）
