@@ -66,3 +66,15 @@
 - [练习5-15](./chap5/homework/exer_5_14to17) （增加-f，排序过程不考虑字母大小写）
 - [练习5-16](./chap5/homework/exer_5_14to17) （增加-d，只对字母、数字和空格进行比较）
 - [练习5-17](./chap5/homework/exer_5_14to17) （增加字段处理功能,实现目录索引排序）
+
+## Chapter 6
+
+### demo
+
+- [统计C语言关键字及指针版本](./chap6/demo/count)
+- [树状结构](./chap6/demo/tree)
+- [哈希表](./chap6/demo/hash)
+
+### 练习
+
+- [练习6-1](./chap6/demo/count/getword.c) （getword函数处理下划线、字符串常量、注释、预处理器控制指令）
