@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include "tnode.h"
 
 #define MAXWORD 100
 struct tnode *addtree(struct tnode *, char *);

@@ -1,5 +1,8 @@
+#include <stdio.h>
+#include <string.h>
+#include "tnode.h"
 struct tnode *talloc(void);
-char *strdup(char *);
+char *strdup_(char *);
 
 struct tnode *addtree(struct tnode *p, char *w)
 {
@@ -7,9 +10,10 @@ struct tnode *addtree(struct tnode *p, char *w)
 
 	if (p == NULL) {
 		p = talloc();
-		p->word = strdup(w);
+		p->word = strdup_(w);
 		p->count = 1;
-		p->left = p->right = NULL;
+		p->left = NULL;
+		p->right = NULL;
 	} else if ((cond = strcmp(w, p->word)) == 0)
 		p->count++;
 	else if (cond < 0)
@@ -22,7 +26,7 @@ struct tnode *addtree(struct tnode *p, char *w)
 void treeprint(struct tnode *p)
 {
 	if (p != NULL) {
-		treepoint(p->left);
+		treeprint(p->left);
 		printf("%4d %s\n", p->count, p->word);
 		treeprint(p->right);
 	}

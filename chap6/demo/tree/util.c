@@ -1,11 +1,12 @@
 #include <stdlib.h>
-
+#include <string.h>
+#include "tnode.h"
 struct tnode *talloc(void)
 {
 	return (struct tnode *) malloc(sizeof(struct tnode));
 }
 
-char *strdup(char *s)
+char *strdup_(char *s)
 {
 	char *p;
 	p = (char *) malloc(strlen(s) +  1);
