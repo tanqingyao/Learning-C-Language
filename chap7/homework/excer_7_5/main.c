@@ -5,12 +5,6 @@
 
 #define MAXOP 100
 
-void debug(int n) {
-    printf("debug:");
-	putchar(n);
-	printf("\n");
-};
-
 int main()
 {
 	int type;
@@ -19,8 +13,6 @@ int main()
 	int num;
 
 	while ((type = getop(&num)) != EOF) {
-		//printf("begin main while:\n");
-		// print_stack();
 		switch (type) {
 			case NUMBER:
 				printf("The value is %d\n", num);
@@ -61,7 +53,6 @@ int main()
 				printf("error: unknown command %d\n", type);
 				break;
 		}
-		// printf("end main while\n");
 	}
 	return 0;
 }

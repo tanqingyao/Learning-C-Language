@@ -8,9 +8,7 @@ int main(int argc, char *argv[])
 {
 	char line[MAXLINE];
 	long lineno = 0;
-	int c, except, number = 0, found = 0;
-
-	printf("argc: %d\n", argc);
+	int c, except = 0, number = 0, found = 0;
 
 	while (--argc > 0 && (*++argv)[0] == '-')
 		while (c = *++argv[0])
@@ -27,7 +25,6 @@ int main(int argc, char *argv[])
 					found = -1;
 					break;
 			}
-
 	if (argc != 1)
 		printf("Usage: find -x -n pattern\n");
 	else
