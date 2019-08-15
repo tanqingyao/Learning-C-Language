@@ -78,7 +78,24 @@
 ### 练习
 
 - [练习6-1](./chap6/demo/count/getword.c) （getword函数处理下划线、字符串常量、注释、预处理器控制指令）
+- [练习6-2](./chap6/homework/exer_6_2) （按字母表顺序分组打印，二叉树中插入二叉树）
+- [练习6-3](./chap6/homework/exer_6_3) （打印所有单词列表，并记录出现的行号，二叉树中插入行号链表）
+- [练习6-4](./chap6/homework/exer_6_4) （按单词出现频率打印不同，二叉树中插入有序链表）
 
+## Chapter 7
+
+### demo
+
+- [统计C语言关键字及指针版本](./chap7/demo) （cat函数）
+
+### 练习
+
+- [练习7-1](./chap7/homework/excer_7_1) （根据自身调用名称完成大写->小写或者小写->大写）
+- [练习7-3](./chap7/homework/excer_7_3) （minprintf函数）
+- [练习7-4](./chap7/homework/excer_7_4) （minscanf函数）
+- [练习7-5](./chap7/homework/excer_7_5) （scanf修改第四章后缀计算器）
+- [练习7-6](./chap7/homework/excer_7_6) （打印两个文件第一个不同行）
+- [练习7-7](./chap7/homework/excer_7_7) （第五章模式查找，加入文件集合）
 ---
 1. begin：7-15，end：2019-07-29 10:10:45
 2. begin: 2019-08-09 14:00:02
