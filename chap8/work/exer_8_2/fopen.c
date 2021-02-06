@@ -1,6 +1,8 @@
 #include <fcntl.h>
 #include "tempio.h"
 #include "syscall.h"
+#include <sys/types.h>
+#include <unistd.h>
 #define PERMS 0666
 
 FILE *fopen(char *name, char *mode)
@@ -12,9 +14,9 @@ FILE *fopen(char *name, char *mode)
         return NULL;
     for (fp = _iob; fp < _iob + OPEN_MAX; fp++)
         if((fp->flag & (_READ | _WRITE)) == 0)
-            break;
+            break;          /* 寻找一个空闲位 */
     if (fp >= _iob + OPEN_MAX)
-        return NULL;
+        return NULL;        /* 没有空闲位 */
 
     if (*mode == 'w')
         fd = creat(name, PERMS);
@@ -24,7 +26,7 @@ FILE *fopen(char *name, char *mode)
         lseek(fd, 0L, 2);
     } else
         fd = open(name, O_RDONLY, 0);
-    if (fd == -1)
+    if (fd == -1)           /* 不能访问名字 */
         return NULL;
     fp->fd = fd;
     fp->cnt = 0;
